@@ -1,0 +1,23 @@
+.container {
+  display: flex;          /* side by side */
+  gap:2px;
+  border: 2px solid red; 
+
+  align-items: center;  
+  height: 80vh;
+  width: 80vw;        /* space between divs */
+}
+
+.box {
+  border : 2px black solid;
+    height:100%;
+    width: 100%;
+}
+.box1{background-color: lightblue;}
+.box2{background-color: coral;}
+
+
+#button{
+  height: 30px;
+  width: 300px;
+}

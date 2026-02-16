@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My webpage</title>
+    <style>
+      .twitter-share-button {
+        background-color: rgb(47, 151, 241);
+        color: white;
+        border: none;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      #yt-subscribe-button {
+        color: white;
+        background-color: red;
+        border: none;
+        padding: 6px;
+        border-radius: 2px;
+        font-size: 10px;
+        cursor: pointer;
+      }
+      #yt-subscribe-button:hover {
+        box-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+        transition: box-shadow 0.15s;
+      }
+      #yt-join-button {
+        border: 1px rgb(54, 133, 237) solid;
+        color: rgb(54, 133, 237);
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 2px;
+      }
+      #yt-join-button:hover {
+        background-color: rgb(54, 133, 237);
+        color: white;
+        transition:0.15s;
+      }
+      button{
+        vertical-align:middle;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="twitter-share-button"
+      href="https://twitter.com/intent/tweet"
+    >
+      Tweet
+    </button>
+    <button id="yt-subscribe-button">Subscribe to my <br>channel</button>
+    <button id="yt-join-button">JOIN</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>

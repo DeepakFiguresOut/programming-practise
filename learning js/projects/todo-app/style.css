@@ -1,0 +1,158 @@
+/* ===== GLOBAL STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #edf2f8, #d1d9e6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px;
+  color: #333;
+}
+
+/* ===== APP CONTAINER ===== */
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 25px 20px;
+}
+
+/* ===== HEADER ===== */
+.app-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* ===== CREATE TODO SECTION ===== */
+#create-todo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#create-todo textarea {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#create-todo textarea:focus {
+  border-color: #5b9df9;
+}
+
+#create-todo button {
+  background: #5b9df9;
+  border: none;
+  color: white;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+#create-todo button:hover {
+  background: #4a8de8;
+  transform: translateY(-2px);
+}
+
+/* ===== TODO ITEMS ===== */
+#todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#todo-container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: background 0.2s, transform 0.1s;
+}
+
+#todo-container > div:hover {
+  background: #f5faff;
+  transform: translateY(-2px);
+}
+
+/* ===== TODO TEXT ===== */
+.todo-text {
+  flex: 1;
+  font-size: 1rem;
+  color: #333;
+  word-break: break-word;
+}
+
+/* ===== EDIT INPUT ===== */
+#edit-textbox {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1rem;
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* ===== BUTTONS ===== */
+.todo-actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: 6px;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.todo-actions button:hover {
+  background: rgba(0,0,0,0.05);
+  transform: scale(1.1);
+}
+
+.todo-actions i.fa-pencil {
+  color: #337ab7;
+  font-size: 1.1rem;
+}
+
+.todo-actions img {
+  width: 20px;
+  height: 20px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px;
+  }
+  
+  #create-todo textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+  
+  .todo-text,
+  #edit-textbox {
+    font-size: 0.95rem;
+  }
+}

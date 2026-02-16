@@ -1,0 +1,54 @@
+
+*{
+
+    margin: 0px;
+}
+p,a,span{
+    font-family: "Google Sans", sans-serif;
+    text-decoration: none;
+}
+#hero-text{
+    font-size: 50px;
+ 
+    border-radius: 20px;
+    font-weight: 1000;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+#contact{
+    background-color: rgb(95, 116, 255);
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+.container{
+    display: flex;
+
+justify-content: space-evenly;
+
+}
+
+.name{
+    color: rgb(52, 32, 202);
+}
+nav{
+    display: flex;
+    font-size: 20px;
+    padding: 15px;
+    column-gap: 20px;
+    border-bottom:1px solid black ;
+    border-radius: 2px;
+    margin: 0px 30px 0px 30px;
+}
+#top-left-name{
+margin-right: auto;
+}
+
